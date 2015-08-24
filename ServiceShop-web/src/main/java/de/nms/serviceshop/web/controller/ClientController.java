@@ -9,6 +9,6 @@ public class ClientController {
 
 	@RequestMapping(value = "/clientManager", method = RequestMethod.GET)
 	public String manageClients() {
-		return "clientManager";
+		return "clientManagerView";
 	}
 }
