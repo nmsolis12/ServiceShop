@@ -29,6 +29,7 @@
 		<!-- Test -->
 		<junit.version>4.11</junit.version>
 		
+		<!-- Apache Tiles Support -->
 		<tiles.version>3.0.4</tiles.version>
 
 	</properties>
