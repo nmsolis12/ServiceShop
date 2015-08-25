@@ -13,9 +13,21 @@
         <put-attribute name="footer" value="/WEB-INF/jsp/includes/footer.jsp" />
     </definition>
  
+	<!-- Home Page -->
+	<definition name="homeView" extends="base.definition">
+        <put-attribute name="title" value="Welcome" />
+        <put-attribute name="body" value="/WEB-INF/jsp/views/homeView.jsp" />
+    </definition>
+	
+	<!-- Client Manager -->
     <definition name="clientManagerView" extends="base.definition">
         <put-attribute name="title" value="Client Manager" />
         <put-attribute name="body" value="/WEB-INF/jsp/views/clientManagerView.jsp" />
     </definition>
- 
+    
+    <!-- Client View -->
+    <definition name="clientView" extends="base.definition">
+        <put-attribute name="title" value="Client View" />
+        <put-attribute name="body" value="/WEB-INF/jsp/views/clientView.jsp" /> 
+    </definition>  
 </tiles-definitions>

@@ -5,10 +5,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-public class ClientController {
+public class IndexController {
 
-	@RequestMapping(value = "/clientManager", method = RequestMethod.GET)
-	public String manageClients() {
-		return "clientManagerView";
+	@RequestMapping(value = "/welcome", method = RequestMethod.GET)
+	public String showHomePage() {
+		return "homeView";
 	}
 }
