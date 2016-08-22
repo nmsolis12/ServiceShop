@@ -7,13 +7,15 @@ import org.junit.Test;
 
 public class ClientControllerTest {
 
+	private boolean fake = true;
+	
 	@Before
 	public void setUp() throws Exception {
 	}
 
 	@Test
 	public void test() {
-		assertTrue(true);
+		assertTrue(fake);
 	}
 
 }
