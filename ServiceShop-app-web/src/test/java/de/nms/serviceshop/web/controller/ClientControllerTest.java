@@ -15,7 +15,7 @@ public class ClientControllerTest {
 
 	@Test
 	public void test() {
-		assertTrue(fake);
+		assertTrue(true);
 	}
 
 }
