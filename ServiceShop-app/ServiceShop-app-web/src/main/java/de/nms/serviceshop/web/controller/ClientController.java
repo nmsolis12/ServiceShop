@@ -1,6 +1,10 @@
 package de.nms.serviceshop.web.controller;
 
+import java.util.Collection;
+import java.util.Map;
+
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -15,13 +19,13 @@ public class ClientController {
 	public String showClientManager() {
 		return "clientManagerView";
 	}
-	
-	@RequestMapping(value = "/clientManager/{clientId}", method = RequestMethod.GET)
-	public ModelAndView showClient(@PathVariable long clientId) {
+
+	@RequestMapping(value = "/clientManager/{clientId}", 
+			method = RequestMethod.GET)
+	public final ModelAndView showClient(@PathVariable final long clientId) {
 		Client client = new Client();
 		client.setClientId(clientId);
 		return new ModelAndView("clientView", "client", client);
 	}
-	
-	
+
 }
